@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/summernote/summernote.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css"></script>
+</head>
+<body>
+<div class="login">
+    <h1 class="text-center">Preencha o Formulário</h1>
+    <form method="POST" action="recupera-dados.php">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" class="form-control" 
+        required placeholder="Coloque seu Nome">
+
+        <br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" class="form-control" 
+        required placeholder="Ex.:seunome@gmail.com">
+
+        <br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" class="form-control" 
+        required placeholder="Coloque sua Idade">
+
+        <br>
+
+        <label for="hobbie">Hobbie:</label>
+        <input type="text" name="hobbie" id="hobbie" class="form-control" 
+        required placeholder="Coloque um Hobbie seu">
+
+        <br>
+
+        <button type="submit" class="btn btn-info w-100">Enviar Formulário
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </svg>
+        </button>
+    </form>
+</div>
+</body>
+</html>
