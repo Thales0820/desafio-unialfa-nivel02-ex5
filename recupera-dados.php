@@ -24,5 +24,3 @@ if($_POST){
     
 }
 ?>
-<script src="js/sweetalert2.min.js"></script>
-<script src="funcoes.php"></script>
