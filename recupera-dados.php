@@ -9,18 +9,20 @@ if($_POST){
     if($idade <= 18){
         echo "Você não tem mais do que 18 anos";
         exit;
-    } if (strlen($nome) < 6) {
+    } 
+    
+    if (strlen($nome) < 6) {
         echo "Nome muito curto, precisa de pelo menos 6 caracteres";
         exit;
-    } else {
-        echo "Nome: " . $nome;
-        echo "<br>";
-        echo "Email: " . $email;
-        echo "<br>";
-        echo "Idade: " . $idade;
-        echo "<br>";
-        echo "Hobbie: " . $hobbie;
-    }
+    } 
+
+    echo "Nome: " . $nome;
+    echo "<br>";
+    echo "Email: " . $email;
+    echo "<br>";
+    echo "Idade: " . $idade;
+    echo "<br>";
+    echo "Hobbie: " . $hobbie;
     
 }
 ?>
